@@ -4,8 +4,14 @@
 #   https://class.coursera.org/rprog-005/human_grading/view/courses/972576/assessments/3
 # -------------------------------------------------------------------
 
-#' Creates a special "matrix" object that can cache its inverse
+#' Creates a special "matrix" object that can cache its inverse.
 #' 
+#' Provides methods "get", "set", "getInverse", and "setInverse".
+#' 
+#' @examples
+#'   cache = makeCacheMatrix(matrix(1:4, ncol=2))
+#'   cache$get()
+#'   
 makeCacheMatrix <- function(x = matrix()) {
   matI <- NULL
   

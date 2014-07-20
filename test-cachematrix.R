@@ -1,3 +1,11 @@
+# This test case can be used to validate cachematrix.R
+#
+# It uses the testthat library:
+#   install.packages("testthat")
+#   library(testthat)
+#   source("cachematrix.R")
+#   test_file("test-cachematrix.R")
+#
 test_that("cachematrix inverts a given matrix", {
   
   matA <- matrix(c(1, 2, 3, 4), nrow = 2, ncol = 2)
